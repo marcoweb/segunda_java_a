@@ -1,6 +1,7 @@
 package primeiro_exemplo;
 
 import primeiro_exemplo.modelos.Pessoa;
+import primeiro_exemplo.modelos.PessoaFisica;
 
 public class Hello {
     public static void main(String[] args) {
@@ -24,5 +25,10 @@ public class Hello {
 
         Pessoa p4 = new Pessoa("Construtor", 45);
         System.out.println(p4.nome);
+
+        PessoaFisica p5 = new PessoaFisica();
+        p5.nome = "Herança";
+        p5.cpf = "45698756322";
+        System.out.println(p5.nome + " : " + p5.cpf);
     }
 }
